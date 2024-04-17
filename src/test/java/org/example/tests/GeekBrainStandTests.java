@@ -47,7 +47,7 @@ public class GeekBrainStandTests {
         // навигация на https://test-stand.gb.ru/login
         driver.get("https://test-stand.gb.ru/login");
         //Объект созданного Page Object
-        loginPage = new LoginPage(driver, wait);
+        loginPage = Selenide.page(LoginPage.class);
 
     }
 
